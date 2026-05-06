@@ -1,0 +1,65 @@
+{
+  "outputDirectory": "dist",
+  "functions": {
+    "api/registrations.js": {
+      "maxDuration": 10
+    },
+    "api/upload.js": {
+      "maxDuration": 60
+    },
+    "api/upload-url.js": {
+      "maxDuration": 60
+    },
+    "api/upload-video.js": {
+      "maxDuration": 60
+    },
+    "api/videos.js": {
+      "maxDuration": 10
+    },
+    "api/services.js": {
+      "maxDuration": 10
+    },
+    "api/activities.js": {
+      "maxDuration": 10
+    },
+    "api/announcements.js": {
+      "maxDuration": 10
+    },
+    "api/gallery.js": {
+      "maxDuration": 10
+    },
+    "api/stats.js": {
+      "maxDuration": 10
+    },
+    "api/contact.js": {
+      "maxDuration": 10
+    },
+    "api/about.js": {
+      "maxDuration": 10
+    },
+    "api/service-details.js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://zeaecdtbkcvmbwjtyeva.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_E_1xkzhAKBlOfIIYrkQTwg_sBwOYwXu",
+    "SUPABASE_SERVICE_ROLE_KEY": "sb_secret_GTfOPO3reLrTcp0x5qTRAQ_ioqN_AFD",
+    "VITE_SUPABASE_URL": "https://zeaecdtbkcvmbwjtyeva.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "sb_publishable_E_1xkzhAKBlOfIIYrkQTwg_sBwOYwXu",
+    "VITE_GOOGLE_CLIENT_ID": "1065078894672-rmp5kp8vfjns5rn9kp5psfp16g691043.apps.googleusercontent.com",
+    "VITE_GOOGLE_AUTH_PROXY": "https://designarena.ai/auth/google/callback",
+    "FULLSTACK_PROJECT_REF": "zeaecdtbkcvmbwjtyeva",
+    "FULLSTACK_RESTORE_API_URL": "https://designarena.ai/api/fullstack-restore"
+  }
+}
